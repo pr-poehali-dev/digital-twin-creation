@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Get user profile",
+      "method": "GET",
+      "expectedStatus": 200,
+      "expectedBody": {
+        "profile": "object",
+        "traits": "array"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}

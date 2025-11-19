@@ -1,0 +1,17 @@
+{
+  "tests": [
+    {
+      "name": "Send chat message",
+      "method": "POST",
+      "body": {
+        "message": "Привет! Как дела?"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "response": "string",
+        "conversationId": "number"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
